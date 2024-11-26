@@ -21,7 +21,7 @@
             <div class="hero-content">
                 <h2 class="main-heading">ИИ-ПОИСК НЕДВИЖИМОСТИ<br>В МОСКВЕ «AI-HOME»</h2>
                 <p class="subtitle">Помогаем найти квартиру в Москве<br>с помощью искусственного интеллекта.</p>
-                <a href="https://t.me/jahjgjashd_bot" class="cta-button" target="_blank" rel="noopener noreferrer">Начать поиск</a>
+                <a href="https://t.me/jahjgjashd_bot" class="cta-button" tabindex="0" aria-label="Начать поиск квартиры через Telegram бот">Начать поиск</a>
                 <div class="image-grid">
                     <div class="image-container">
                         <img src="https://s800sas.storage.yandex.net/rdisk/6849325f071f4b46be38349d829cd300f914a8d3ecee5439c06c150b15e81ffd/6746812b/n9fn7igXMW6DxvakbFYypguV6ogSkWy80Cejk-vT7Imw24y6VRv2rqSouSd2Dz-g0oOf1O0DLCCaOSnwK88vsw==?uid=0&filename=Frame%202.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=0&fsize=157610&hid=dde5baceecf762e3a2244e2acb487900&media_type=image&tknv=v2&etag=e9e12eef1adf85b4aaf9aff84e1d388d&ts=627db907260c0&s=80481360633583b025103dd4f45114c823e19f71bf9fabf06900cd8a8e425ee3&pb=U2FsdGVkX1-74zWmqFnkHGFuaXsqHVO0Io5N2vKowwa8geNOM1lgV8G1x6bOigw_tQhKok6_dd3_nFoidw1k4iK13aXdMpcYHAP7-ypxyg0" alt="Квартира 1" class="property-image">
@@ -120,23 +120,27 @@
     }
 
     .cta-button {
-        border-radius: 11px;
-        background-color: #FF5B2D;
-        margin-top: 49px;
-        margin-bottom: -60px;
-        color: #fff;
-        padding: 12px 53px;
-        font-size: 27px;
-        font-weight: 700;
-        text-decoration: none;
-        transition: transform 0.3s ease;
-        display: inline-block;
+    border-radius: 11px;
+    background-color: #FF5B2D;
+    margin-top: 49px;
+    color: #fff;
+    padding: 12px 53px;
+    font: 700 27px/1 Inter, sans-serif;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    display: inline-block;
+    position: relative;
+    z-index: 3;
     }
 
-    .cta-button:hover, 
-    .cta-button:focus {
-        transform: scale(1.05);
-    }
+  .cta-button:hover {
+    transform: scale(1.1);
+  }
+
+  .cta-button:focus {
+    outline: 3px solid #000;
+    outline-offset: 2px;
+  }
 
     .image-grid {
         width: 100%;
